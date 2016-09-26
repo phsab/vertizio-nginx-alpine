@@ -1,5 +1,5 @@
 FROM alpine:3.4
-MAINTAINER Wodby <hello@wodby.com>
+MAINTAINER phsab <info@vertizio.nl>
 
 ENV NGX_VER 1.10.1
 ENV NGX_UP_VER 0.9.1
@@ -110,7 +110,7 @@ RUN mkdir /etc/nginx/conf.d && \
 # Copy configs
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY fastcgi_params /etc/nginx/fastcgi_params
-COPY wordpress.conf /etc/nginx/conf.d/
+#COPY wordpress.conf /etc/nginx/conf.d/
 
 WORKDIR /var/www/html
 VOLUME /var/www/html
