@@ -1,1 +1,1 @@
-# vertizio-nginx-alpine
+# wordpress-nginx
